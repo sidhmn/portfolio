@@ -93,6 +93,10 @@ button:hover {
     cursor: pointer;
 }
 
+button span {
+    font-family: "Noto Sans Thai Looped", sans-serif;
+}
+
 /* INTRO */
 #intro {
     padding-top: 5%;
