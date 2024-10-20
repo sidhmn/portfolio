@@ -19,28 +19,44 @@ nav a {
     font-family: "Noto Sans Thai Looped", sans-serif;
 }
 
-nav a:hover {
-    color: #4C71A7;
-}
-
 nav a:visited {
     color: black;
 }
+
+nav a:hover {
+    /* background-color: #4C71A7;
+    color: white; */
+    color: #4C71A7;
+}
+
 
 #logo {
     /* margin-right: 80px; */
     padding-left: 0;
     margin-left: 0;
-    padding-right: 100px;
-    font-size: 200%;
-    font-family: "News Cycle", sans-serif;
+    padding-right: 150px;
+    font: 800 250% "News Cycle", sans-serif;   
+    color: #4C71A7;
 }
 
 /* MAIN */
+#bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-side {
+    background-color: #6e88af;
+    width: 32%;
+    position: sticky;
+}
+
+
+
 #lower-main {
     width: 40%;
     margin: auto;
-    margin-left: 40%;
+    margin-left: 8%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -69,32 +85,6 @@ nav a:visited {
 
 .section { 
     margin-bottom: 10%;
-}
-
-
-button {
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 1%;
-    border-radius: 20px;
-    padding: 2.5% 5%;
-    border:transparent;
-    background-color: #a6b9d5;
-}
-
-button > img,
-button > span {
-  vertical-align: middle;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-button span {
-    font-family: "Noto Sans Thai Looped", sans-serif;
 }
 
 /* INTRO */
@@ -128,30 +118,63 @@ hr {
     width: 32%;
     height: 2px;
     border: none;
-    color: #3D5D8D;
-    background-color: #3D5D8D;
+    color: #6e88af;
+    background-color: #6e88af;
 }
 
 /* ABOUT ME */
 
 /* PROJECTS */
 .proj-images {
-    width: 80%;
-}
-
-#projects a {
-    font-family: "Noto Sans Thai Looped", sans-serif;
+    width: 100%;
+    margin-bottom: 1%;
 }
 
 #projects h4 { 
     font-size: 115%;
 }
 
+button {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    padding: 1.5% 4%;
+    /* border:transparent;
+    background-color: #a6b9d5; */
+    border: #3D5D8D solid 1.5px;
+    color: #3D5D8D;
+    background-color: transparent;
+}
+
+button > img,
+button > span {
+  vertical-align: middle;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #3D5D8D;
+    color: white;
+    transition: 0.8s;
+}
+
+button span {
+    font: 700 110% "Noto  Sans Thai Looped", sans-serif;
+    text-transform: uppercase;
+    /* color: white; */
+}
+
+button img {
+    width: 3.5%;
+    padding-right: 1%;
+}
 
 /* EXPERIENCES */
 #experiences ul li {
-    font-family: "Noto Sans Thai Looped", sans-serif;
-    font-size: 115%;
+    font: 115% "Noto Sans Thai Looped", sans-serif;
 }
 
 #experiences ul {
