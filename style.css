@@ -15,8 +15,7 @@ nav {
 nav a {
     color: black;
     text-decoration: none;
-    font-size: 110%;
-    font-family: "Noto Sans Thai Looped", sans-serif;
+    font: 110% "Noto Sans Thai Looped", sans-serif;
 }
 
 nav a:visited {
@@ -46,11 +45,36 @@ nav a:hover {
 }
 
 #left-side {
-    background-color: #6e88af;
-    width: 32%;
+    background-color: #98aecf;
+    width: 28%;
     position: sticky;
+    padding-left: 4%;
+    padding-top: 2.5%;
+    height: 100vh;
 }
 
+#left-side p {
+    font: 800 300% "News Cycle", sans-serif; 
+    color: white;
+    margin-bottom: 10%;
+}
+
+#left-side ul li {
+    list-style-type: none;
+    padding-bottom: 1%;
+    margin-left: 5%;
+}
+
+#left-side ul li a{
+    text-decoration: none;
+    color: #3D5D8D;
+    font: 110% "Noto Sans Thai Looped", sans-serif;
+}
+
+#left-side div {
+    margin-top: 3%;
+    margin-left: 5%;
+}
 
 
 #lower-main {
@@ -61,6 +85,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-top: 4%;
 }
 
 #lower-main p {
@@ -196,6 +221,10 @@ button img {
 
 #experiences h4 {
     font-size: 115%;
+}
+
+#experiences .section {
+    margin-bottom: 4%;
 }
 
 
