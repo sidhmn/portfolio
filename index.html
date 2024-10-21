@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/star.png">
+    <script defer src="app.js"></script>
     <title> SID MURAD </title>
 </head>
 <body>
@@ -22,7 +23,7 @@
         <div id="intro">
             <p id="name">Hey, I'm Sid Murad!</p>
             <p> I’m an aspiring 
-                <span id="front-end">full-stack developer</span>
+                <span id="full-stack">full-stack developer</span> <br>
                 passionate about user-centric design and empowering marginalized voices. </p>
             <p id="based">Based in NYC & Boston.</p>
         </div>
@@ -47,26 +48,38 @@
                 </div>
             </div>
             <div id="lower-main">
-                <div id="about-me">
-                    <h3>About me <id="dots">. . .</id> </h3>
-                    <p>I'm a student at Boston University majoring in Computer Science and minoring in psychology. 
+                <div class="hidden" id="about-me">
+                    <h3 class="hidden">About me <id="dots">. . .</id> </h3>
+                    <p class="hidden">I'm a student at Boston University majoring in Computer Science and minoring in psychology. 
                         I'm a member of the Boston University’s Hack4Impact's Junior Development Team and the Society 
                         of Asian Scientists and Engineer's Boston University Chapter. I'm looking for opportunities 
                         in web/mobile development or UX design to expand my skills while working closely 
                         with users.
                     </p> <br>
-                    <p> I have web development and graphic design experience from my apprenticeship at CodeSpeak Labs, 
+                    <p class="hidden"> I have web development and graphic design experience from my apprenticeship at CodeSpeak Labs, 
                         along with my coursework through college. Some of my skills include but are not limited to:
                     </p> <br>
-                    <img width="70px" src="images/html-logo.png"> <!--html-->
-                    <img width="50px" src="images/css-logo.png"> <!--css-->
-                    <img width="70px" src="images/js-logo.webp"> <!--javascript-->
-                    <img width="70px" src="images/figma-logo.png"> <!--figma-->
-                    <img width="60px" src="images/python-logo.png"> <!--python-->
+                    <div id="logos" class="hidden" >
+                        <div class="hidden-logo">
+                            <img width="70px" src="images/html-logo.png"> <!--html-->
+                        </div>
+                        <div class="hidden-logo">
+                            <img width="50px" src="images/css-logo.png"> <!--css-->
+                        </div>
+                        <div class="hidden-logo">
+                            <img width="70px" src="images/js-logo.webp"> <!--javascript-->
+                        </div>
+                        <div class="hidden-logo">
+                            <img width="70px" src="images/figma-logo.png"> <!--figma-->
+                        </div>
+                        <div class="hidden-logo">
+                            <img width="60px" src="images/python-logo.png"> <!--python-->
+                        </div>
+                    </div>
                 </div>
                 <div id="projects">
-                    <h3>Projects <id="dots">. . .</id> </h3>
-                    <div class="section">
+                    <h3 class="hidden">Projects <id="dots">. . .</id> </h3>
+                    <div class="hidden" class="section">
                         <img class="proj-images" src="images/fav-website.png">
                         <button onclick="window.open('https://sidhmn.github.io/favoriteslist/', '_blank')">
                             <img width="20px" src="images/github-logo.png">
@@ -78,7 +91,8 @@
                             them at the click of a button. 
                         </p>
                     </div>
-                    <div class="section">
+                    <br> <br>
+                    <div class="hidden" class="section">
                         <img class="proj-images" src="images/sa-website.png">
                         <button onclick="window.open('https://sidhmn.github.io/antisexualviolence/index.html', '_blank')">
                             <img width="20px" src="images/github-logo.png">
@@ -91,7 +105,8 @@
                             this epidemic for the general public. 
                         </p>
                     </div>
-                    <div class="section">
+                    <br> <br>
+                    <div class="hidden" class="section">
                         <img class="proj-images" src="images/sr-website.png">
                         <button onclick="window.open('https://sidhmn.github.io/sylviarivera/', '_blank')">
                             <img width="20px" src="images/github-logo.png">
@@ -106,8 +121,8 @@
                     </div>
                 </div>
                 <div id="experiences">
-                    <h3>Experience <id="dots">. . .</id> </h3>
-                    <div class="section">
+                    <h3 class="hidden">Experience <id="dots">. . .</id> </h3>
+                    <div class="hidden" class="section">
                         <h4>Creative Practice Intern</h4>
                         <p class="location">Brooklyn Museum, Brooklyn, NY</p>
                         <p class="date">Septemeber 2021 - June 2023</p>
@@ -117,7 +132,8 @@
                             <li>Co-facilitated an interview with artist Guadeloupe Maravilla</li>
                         </ul>
                     </div>
-                    <div class="section">
+                    <br> <br>
+                    <div class="hidden" class="section">
                         <h4>Graphic Design Apprentice</h4>
                         <p class="location">CodeSpeak Labs, New York, NY</p>
                         <p class="date">June 2022 - January 2023</p>
@@ -128,7 +144,8 @@
                             <li>Co-facilitated an Internet usage worship with API Rise and founder of CodeSpeak Labs</li>
                         </ul>
                     </div>
-                    <div class="section">
+                    <br> <br>
+                    <div class="hidden" class="section">
                         <h4>Tech Scholar</h4>
                         <p class="location">New-York Historical Society, New York, NY</p>
                         <p class="date">August 2022</p>
@@ -136,7 +153,7 @@
                             <li>Improved my understanding of HTML and CSS to create collaborative mini-projects with peers</li>
                         </ul>
                     </div>
-                    <div class="section">
+                    <div class="hidden" class="section">
                         <h4>Summer Immersion Program Intern</h4>
                         <p class="location">Girls Who Code, Remote</p>
                         <p class="date">August 2021</p>

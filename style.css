@@ -4,6 +4,22 @@
     margin: 0;
 }
 
+
+/* full page animation */
+.hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-20%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+
 /* NAV */
 nav {
     display: flex;
@@ -47,10 +63,12 @@ nav a:hover {
 #left-side {
     background-color: #98aecf;
     width: 28%;
-    position: sticky;
     padding-left: 4%;
     padding-top: 2.5%;
     height: 100vh;
+    z-index: 1;
+    position: sticky;
+    top: 0;
 }
 
 #left-side p {
@@ -86,6 +104,8 @@ nav a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     padding-top: 4%;
+    z-index: 0;
+    position: relative;
 }
 
 #lower-main p {
@@ -105,7 +125,7 @@ nav a:hover {
 }
 
 #projects, #experiences, #about-me {
-    padding-bottom: 20%;
+    padding-bottom: 50%;
 }
 
 .section { 
@@ -126,10 +146,34 @@ nav a:hover {
     color: #3D5D8D;
 }
 
-#front-end {
+
+#full-stack {
     color: #3D5D8D;
-    font-family: "Space Mono", monospace;
+    font:  100% "Space Mono", monospace;
+    border-right: #3D5D8D 5px solid;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    line-height: 98%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(20),
+        cursor .5s step-end infinite alternate;
 }
+
+/* blinking cursor */
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+/* typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to {    width: 20ch;    }
+}
+
 
 #based {
     color: #949494;
@@ -148,6 +192,25 @@ hr {
 }
 
 /* ABOUT ME */
+#logos {
+    display: flex;
+}
+
+#logos:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+#logos:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+#logos:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+#logos:nth-child(5) {
+    transition-delay: 800ms;
+}
 
 /* PROJECTS */
 .proj-images {
@@ -230,3 +293,8 @@ button img {
 
 /* FOOTER */
 
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
